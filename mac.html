@@ -4,14 +4,14 @@
 <head>
     <title>My Mac Page</title>
     <style>
-        header,
+        /* header,
         main,
         section,
         article {
             border: solid 1px blue;
             margin: 10px;
             padding: 10px;
-        }
+        } */
 
         a {
             margin-right: 10%;
@@ -19,8 +19,11 @@
         }
 
         header {
-            font-family: Arial, Helvetica, sans-serif;
             padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .top-row {
@@ -33,6 +36,45 @@
 
         .model-block {
             display: inline-block;
+        }
+
+        .model-image {
+            width: 400px;
+            margin-left: 5%;
+        }
+
+        .new-model {
+            color: #bf4800
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h1,h2 {
+            font-weight: normal;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* a:visited {
+            color:#0066cc;
+        } */
+
+        button {
+            background-color:#0071e3;
+            color:white;
+            border-radius: 20px;
+            width:70px;
+            height: 40px;
+            border: none;
+            font-size: 1.2em;
+        }
+
+        section {
+            margin-top: 100px;
         }
 
     </style>
@@ -77,16 +119,29 @@
     </header>
 
     <!-- main page blocks -->
-    <main>
-        <section>
-            <h1>Made in the UK.</h1>
-            <h1>Behind the Mac.</h1>
-            <p>Meet the creators</p>
-            <!-- images here -->
-        </section>
+    <main style='padding: 30px'>
         <article>
             <section>
-                <h2>New</h2>
+                <div style="display:inline-block">
+                    <h2 class="new-model">New</h2>
+                    <h2>27-inch model</h2>
+                    <h1>iMac</h1>
+                    <h2>The all-in-one for all.</h2>
+                    <button>Buy</button>
+                    <p><a href="https://www.apple.com/uk/imac/">Learn more ></a></p>
+                </div>
+                <img class="model-image" src="imac27.jpeg" alt="imac 27 inch">
+            </section>
+            <section>
+                <h2 class="new-model">New</h2>
+                <h1>MacBook Air</h1>
+                <h2>Light. Speed.</h2>
+                <button>Buy</button>
+                <p>Learn more ></p>
+                <img src="" alt="MacBookAir">
+            </section>
+            <section>
+                <h2 class="new-model">New</h2>
                 <h2>13-inch model</h2>
                 <h1>MacBook Pro</h1>
                 <h2>Power. Moves.</h2>
@@ -94,23 +149,13 @@
                 <p>Learn more ></p>
                 <img src="" alt="MacBookPro13">
             </section>
-            <section>
-                <img src="" alt="MacBookPro16">
-                <h2>16-inch model</h2>
-                <h1>MacBook Pro</h1>
-                <h2>The best for the brightest.</h2>
-                <button>Buy</button>
-                <p>Learn more ></p>
-            </section>
-            <section>
-                <h2>New</h2>
-                <h1>MacBook Air</h1>
-                <h2>Light. Speed.</h2>
-                <button>Buy</button>
-                <p>Learn more ></p>
-                <img src="" alt="MacBookAir">
-            </section>
         </article>
+        <section>
+            <h1>Made in the UK.</h1>
+            <h1>Behind the Mac.</h1>
+            <p>Meet the creators</p>
+            <!-- images here -->
+        </section>
     </main>
     <footer>
         <!-- links to other pages -->
